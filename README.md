@@ -1,9 +1,9 @@
-# Scrollable 3D Animation with Three.js
-
-3D THREE JS WEBSITE 
+# Portfolio Website with Scrollable 3D Animation using Three.js
 
 
-Uses Three.js Javascript Library to create a 3D Portfolio Website, it also features WebGL and a Scrolling Animation. Uses CSS Grid for the main Content. The avatar image is a 3D Cube that rotates as we scroll down along with a huge 3D Ring that rotates continuously. There's a rotating moon animation as well as some stars throughout.
+
+## Description
+This repository contains code for a production-ready portfolio website that showcases a scrollable 3D animation using the Three.js library. The website features WebGL, CSS Grid, and a unique scrolling animation. The avatar image is a 3D cube that rotates as the user scrolls down, along with a large 3D ring that rotates continuously. Additionally, the website includes a rotating moon animation and stars throughout.
 
 Three.js Docs https://threejs.org/
 WebGL Overview https://youtu.be/f-9LEoYYvE4
@@ -11,10 +11,38 @@ WebGL Overview https://youtu.be/f-9LEoYYvE4
 
 - [Scrollable Three.js Animation](https://fireship.io/snippets/threejs-scrollbar-animation) Snippet
 
-## Usage
+## Table of Contents 
+- Demo 
+- Technologies Used 
+- Installation and Setup 
+- Wireframe 
+- Contributing 
+- License
 
-```
-git clone <this-repo>
-npm install
-npm run dev
-```
+## Demo 
+A demo of the portfolio website is available at [[link to website](https://ecbjrdev.xyz/)]. 
+
+## Technologies Used
+The website was developed using the following technologies:
+- Three.js
+- WebGL
+- CSS Grid
+
+
+
+## Installation and Setup
+To set up the website, follow these steps:
+Clone this repository: `git clone <this-repo>`
+Install dependencies:`npm install`
+Run the development server: `npm run dev`
+
+## Contributing 
+Contributions to the website are welcome. To contribute, please follow these steps:
+1. Fork this repository
+2. Create a new branch for your changes: git checkout -b <branch-name>
+3. Make your changes and commit them: git commit -am 'Add some feature'
+4. Push to the branch: git push origin <branch-name>
+5. Submit a pull request
+
+## License 
+ This project is licensed under the MIT License.
