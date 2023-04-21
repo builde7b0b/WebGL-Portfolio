@@ -205,3 +205,245 @@ canvas {
     }
   }
   
+  .icon-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .icon-group i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #0077B5;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button-group a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-github {
+    background-color: #24292e;
+  }
+  
+  .btn-resume {
+    background-color: #007bff;
+  }
+  
+  .btn-portfolio {
+    background-color: #28a745;
+  }
+  .btn-linkedin {
+    background-color: #0077B5;
+  }
+  .btn-codepen {
+    background-color: #0ebeff;
+  }
+  
+  .btn-hackerrank {
+    background-color: #2ec866;
+  }
+  
+  .button-group a:hover {
+    opacity: 0.8;
+  }
+
+  .button-group a i {
+    margin-right: 5px;
+  }
+
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .project-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-list li {
+    margin: 10px;
+  }
+  
+  .project-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-nft-website {
+    background-color: #0077B5;
+  }
+  
+  .btn-ethereum {
+    background-color: #3C3C3D;
+  }
+  .btn-polygon {
+    background-color: #8247e5;
+    }
+    
+    .btn-virtual-gallery {
+    background-color: #ff6600;
+    }
+    
+    .btn-metaverse-mini {
+    background-color: #00b300;
+    }
+    
+    .btn-solidity {
+    background-color: #cfa900;
+    }
+
+    .btn-portfolio {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: white;
+      background-color: #24292e;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      }
+      
+      .btn-nft-website:hover, .btn-ethereum:hover, .btn-polygon:hover, .btn-virtual-gallery:hover, .btn-metaverse-mini:hover, .btn-solidity:hover, .btn-portfolio:hover {
+      opacity: 0.8;
+      }
+      
+      .portfolio-link {
+      margin-top: 30px;
+      text-align: center;
+      }
+
+      .hackathon-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .hackathon-list li {
+        margin: 20px;
+      }
+      
+      .hackathon-icon {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #0077B5;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .hackathon-icon img {
+        max-width: 60%;
+        max-height: 60%;
+      }
+      
+      .hackathon-icon::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+        width: 150px;
+        background-color: #fff;
+        color: #0077B5;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+      }
+      
+      .hackathon-icon:hover {
+        transform: translateY(-10px);
+      }
+      
+      .hackathon-icon:hover::before {
+        top: -80px;
+        opacity: 1;
+      }
+
+      .project-list2 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .project-list2 li {
+        margin: 20px;
+      }
+      
+      .btn-html {
+        background-color: #E44D26;
+        color: white;
+      }
+      
+      .btn-css {
+        background-color: #264DE4;
+        color: white;
+      }
+      
+      .btn-javascript {
+        background-color: #F7DF1E;
+        color: black;
+      }
+      
+      .btn-react {
+        background-color: #61DAFB;
+        color: black;
+      }
+      
+      .project-list2 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .project-list2 a:hover {
+        opacity: 0.8;
+      }
