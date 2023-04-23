@@ -1,5 +1,5 @@
 # Portfolio Website with Scrollable 3D Animation using Three.js
-
+![Example image](https://i.imgur.com/6pUBZ3z.png)
 
 
 ## Description
