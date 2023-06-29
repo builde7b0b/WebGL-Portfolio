@@ -1,5 +1,5 @@
 # Portfolio Website with Scrollable 3D Animation using Three.js
-
+![Example image](https://i.imgur.com/6pUBZ3z.png)
 
 
 ## Description
@@ -12,12 +12,12 @@ This repository contains code for a production-ready portfolio website that show
 - [Scrollable Three.js Animation](https://fireship.io/snippets/threejs-scrollbar-animation) Snippet
 
 ## Table of Contents 
-- Demo 
-- Technologies Used 
-- Installation and Setup 
-- Wireframe 
-- Contributing 
-- License
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Wireframe](#wireframe)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Demo 
 A demo of the portfolio website is available at [[link to website](https://ecbjrdev.xyz/)]. 
