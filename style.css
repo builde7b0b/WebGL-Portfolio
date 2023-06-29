@@ -316,9 +316,18 @@ canvas {
     background-color: #00b300;
     }
     
-    .btn-solidity {
+    .btn-sol {
     background-color: #cfa900;
     }
+
+    .btn-solidity {
+      background-color: red;
+      }
+
+
+      .btn-hey {
+        background-color: silver;
+        }
 
     .btn-portfolio {
       display: block;
