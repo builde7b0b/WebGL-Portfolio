@@ -1,0 +1,31 @@
+.progress-list {
+    list-style: none;
+    padding: 0;
+}
+
+.progress-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.progress-bar {
+    height: 4px;
+    background: lightgrey;
+    position: relative;
+    margin-top: 5px;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: green;
+    width: 0;
+}
+
+/* Example of dynamic width calculation */
+.progress-bar[data-value="100"]::after { width: 100%; }
+.progress-bar[data-value="10"]::after { width: 10%; }

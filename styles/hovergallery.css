@@ -1,0 +1,11 @@
+.hover-gallery img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .hover-gallery img:hover {
+    transform: scale(1.05) rotate(-3deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  

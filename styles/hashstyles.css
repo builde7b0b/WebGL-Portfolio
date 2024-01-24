@@ -1,0 +1,38 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  blockquote {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #00ffae;
+    color: #d1d1d1;
+    padding: 20px;
+    margin: 20px 0;
+    font-weight: 300;
+  }
+  
+  #hash-generator button {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #hash-generator button:hover {
+    background-color: #7b68ee;
+    box-shadow: 0 0 15px #7b68ee;
+  }
+  
+  #random-hash-display {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #a9a9a9;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+  }
+  

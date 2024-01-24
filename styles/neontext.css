@@ -1,0 +1,36 @@
+.neon-text {
+    color: #fff;
+    text-shadow:
+      0 0 5px #c8c8c8,
+      0 0 10px #969696,
+      0 0 20px #525252,
+      0 0 40px #3a3a3a,
+      0 0 80px #1c1c1c,
+      0 0 90px #141414,
+      0 0 100px #0a0a0a;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #e600b4d2,
+        0 0 40px #b800e6,
+        0 0 50px #cf00e6,
+        0 0 60px #e60073,
+        0 0 70px #e600de;
+    }
+    to {
+      text-shadow:
+        0 0 20px #fff,
+        0 0 30px #ff4da6,
+        0 0 40px #ff4da6,
+        0 0 50px #ff4da6,
+        0 0 60px #ff4da6,
+        0 0 70px #ff4da6,
+        0 0 80px #ff4da6;
+    }
+  }
+  
