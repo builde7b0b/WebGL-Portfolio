@@ -234,6 +234,7 @@ keyframes revealText {
   
   .icon-group {
     display: flex;
+    overflow:auto;
     justify-content: center;
     margin-top: 20px;
   }
@@ -487,3 +488,57 @@ keyframes revealText {
       .project-list2 a:hover {
         opacity: 0.8;
       }
+
+      .icon-group {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Adjust space between icons */
+      }
+      
+      .custom-icon {
+        width: 50px; /* Adjust based on your preference */
+        height: auto; /* Keeps aspect ratio */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+      
+      .custom-icon:hover {
+        transform: scale(1.1); /* Slightly enlarges the icon on hover */
+      }
+      
+      @media screen and (max-width: 768px) {
+        .custom-icon {
+          width: 30px; /* Smaller size for mobile */
+        }
+      }
+      
+
+
+      .certification-image {
+        display: flex;
+        flex-direction:column;
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically */
+        margin: 20px 0; /* Adds space above and below the container */
+    }
+    
+    .certification-image img {
+        max-width: 100%; /* Ensures the image is responsive */
+        height: auto; /* Maintains the aspect ratio */
+        border: 3px solid #ddd; /* Adds a subtle border */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* For smooth hover effects */
+    }
+
+    
+    .certification-image img:hover {
+      transform: scale(1.05); /* Slightly enlarges the image */
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhances the shadow */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .certification-image img {
+        width: 90%; /* Adjusts the width on smaller screens */
+    }
+}
