@@ -36,12 +36,39 @@ h1, h2, h3, blockquote {
   font-style: normal;
 }
 
+
+
 canvas {
   position: fixed;
   top: 0;
   left: 0;
 }
 
+.blockquote{
+  border-left: 5px solid #8a2be2; /* A colored border for emphasis */
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden; /* Ensures the text reveal effect is contained within the block */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blockquote p{
+  opacity: 0; /* Initial state - text is invisible */
+  transform: translateX(-100%);
+  animation: revealText 3s forwards; /* Animation to reveal text */
+}
+
+keyframes revealText {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.blockquote:hover {
+  transform: translateY(-10px); /* Slight elevation on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
 
 
   header {
@@ -352,63 +379,67 @@ canvas {
       text-align: center;
       }
 
+
       .hackathon-list {
-        list-style-type: none;
-        margin: 0;
+        list-style: none;
         padding: 0;
-        display: flex;
-        justify-content: center;
-      }
-      
-      .hackathon-list li {
-        margin: 20px;
       }
       
       .hackathon-icon {
-        position: relative;
-        width: 100px;
-        height: 100px;
+        position: relative; /* For tooltip positioning */
+
+        width: 120px; /* Adjust the size as needed */
+        height: 120px;
+        overflow: hidden;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
-        align-items: center;
         justify-content: center;
-        border-radius: 50%;
-        background-color: #0077B5;
-        transition: all 0.3s ease-in-out;
+        align-items: center;
       }
       
       .hackathon-icon img {
-        max-width: 60%;
-        max-height: 60%;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
       }
+      
       
       .hackathon-icon::before {
-        content: "";
+        content: attr(data-title);
         position: absolute;
-        top: -40px;
+        bottom: -30px; /* Adjust as needed */
         left: 50%;
         transform: translateX(-50%);
-        padding: 5px;
-        width: 150px;
-        background-color: #fff;
-        color: #0077B5;
-        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
         font-size: 14px;
-        font-weight: bold;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
         opacity: 0;
-        transition: all 0.3s ease-in-out;
-        z-index: 1;
-      }
-      
-      .hackathon-icon:hover {
-        transform: translateY(-10px);
+        visibility: hidden;
+        transition: opacity 0.3s ease;
       }
       
       .hackathon-icon:hover::before {
-        top: -80px;
         opacity: 1;
+        visibility: visible;
       }
+      
+      .hackathon-icon:hover {
+        transform: scale(1.05); /* Slightly enlarges the icon */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+      }
+      
+      .hackathon-icon:hover img {
+        transform: scale(1.1); /* Slightly enlarges the image */
+      }
+      
+
+
+
 
       .project-list2 {
         list-style-type: none;

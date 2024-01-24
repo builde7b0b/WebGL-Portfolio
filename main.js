@@ -128,3 +128,32 @@ function animate() {
 }
 
 animate();
+
+
+
+function generateRandomHash(length) {
+  const characters = '0123456789ABCDEF';
+  let hash = '';
+  for (let i = 0; i < length; i++) {
+      hash += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return hash;
+}
+
+function showRandomHash() {
+  const randomHash = generateRandomHash(16); // Generates a 16-character hash
+  document.getElementById('random-hash-display').innerText = randomHash;
+}
+
+// Example usage:
+const randomHash = generateRandomHash(16); // Generates a 16-character hash
+console.log(randomHash);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var bars = document.querySelectorAll('.progress-bar');
+  bars.forEach(function(bar) {
+      var value = bar.getAttribute('data-value');
+      bar.style.setProperty('--progress', value + '%');
+  });
+});

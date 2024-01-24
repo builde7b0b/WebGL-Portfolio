@@ -19,6 +19,18 @@
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eugene's Website</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/styles/hashstyles.css">
+        <link rel="stylesheet" type="text/css" href="/styles/floatingripple.css">
+        <link rel="stylesheet" type="text/css" href="/styles/neontext.css">
+        <link rel="stylesheet" type="text/css" href="/styles/progress.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+
     </head>
     <body>
     
@@ -27,27 +39,34 @@
         <main>
     
             <header>
-                <h1>Eugene Brown</h1>
-                <p>🚀 Welcome to my HUB!</p>
-                <div class="button-group">
-                    <a target="_blank" href="https://github.com/builde7b0b" class="btn-github">Github</a>
-                    <a target="_blank" href="./images/Resume_Updated_2023.pdf" class="btn-resume">Download Resume</a>
-                    <a target="_blank" href="https://builde7b0b.github.io/Ecbjr-Portfolio/
+
+                <h1 class="animate__animated animate__bounce animate__slow neon-text">Eugene Brown</h1>
+                <p class="animate__animated animate__bounce animate__slow">🚀 Welcome to my HUB!</p>
+                <div class="button-group animate__animated animate__bounce animate__slow">
+                    <a data-aos="slide-right" target="_blank" href="https://github.com/builde7b0b" class="btn-github">Github</a>
+                    <a data-aos="slide-right" target="_blank" href="images\Resume_Updated_2023.pdf" class="btn-resume ">Download Resume</a>
+                    <a data-aos="slide-right" target="_blank" href="https://builde7b0b.github.io/Ecbjr-Portfolio/
                     " class="btn-portfolio">Portfolio</a>
+                    
                   </div>
+                  <div id="hash-generator">
+                    <button data-aos="slide-right" onclick="showRandomHash()">Generate Random Hash</button>
+                    <p class="neon-text" id="random-hash-display"></p>
+                </div>
             </header>
     
-    
+
             <blockquote>
-                <p>Currently Creating In Blockchain, Crypto and Non-Fungible Tokens(NFT)</p>
+                <p data-aos="fade-up" class="neon-text">Currently Creating In Blockchain, Crypto and Non-Fungible Tokens(NFT)</p>
             </blockquote>
+            
     
             <section>
                 <h2>📜 Manifesto</h2>
                 <p>
                     <b>Keywords:</b> Analytical, Intelligent, Helpful, Conscientous<br /><br />
     
-                    I am is an respectable, hard-working individual who has a love of knowledge and know-how.<br/><br/>
+                    <p class="neon-text">I am is an respectable, hard-working individual who has a love of knowledge and know-how.</p><br/><br/>
     
                     I am someone who will bring creativity to a project. To work at my very best I need to have as much freedom as possible to develop my ideas.
     
@@ -55,11 +74,11 @@
     
                     I care about others and am easily touched by human suffering.<br /><br />
     
-                    We are each unique and special. I believe in Community and cooperation > Competition   Let’s work together and build something big.<br>
+                    <p class="neon-text">We are each unique and special. I believe in Community and cooperation > Competition   Let’s work together and build something big.</p><br>
     
                     <section>
                         <h2>Connect with me:</h2>
-                        <div class="button-group">
+                        <div data-aos="fade-up" class="button-group">
                           <a target="_blank" href="https://www.linkedin.com/in/eugene-brown-jr-38210b99/" class="btn-linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                           <a target="_blank" href="https://github.com/builde7b0b/" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
                           <a target="_blank" href="https://codepen.io/dagoa7" class="btn-codepen"><i class="fab fa-codepen"></i> CodePen</a>
@@ -80,12 +99,55 @@
     
             </section>
     
-            <section class="light">
+            <section data-aos="fade-up" class="light">
                 <h2>👩🏽‍🚀 Projects</h2>
+                <section>
+                  <h3>Live Apps</h3>
+                  <ul class="project-list">
+                    <li>
+                      <a target="_blank" href="https://chainbraincrypto.com" class="btn-hey">ChainBrainBot (Telegram)</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://ai.elvenenchantments.art" class="btn-hey">"ElvenAI" Spiritual Chat Assistant</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://buzzburgers.netlify.app/" class="btn-hey">"MoonBurgers" Landing </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://nftcollectx.pro/" class="btn-hey">"NFTCollectX" Collection Management Platform </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://buzzburgers.netlify.app/" class="btn-hey">"Cronos Kitchen" Blockchain Marketplace </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://croclass.netlify.app/" class="btn-hey">Educational Blockchain Website - HTML | CSS | JS</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://innovatewith.codes" class="btn-hey">Three.JS Portfolio</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://gbudy.vercel.app/" class="btn-hey">OpenAI ChatBot in ReactJS</a>
+                    </li>
+                    
+                    <li>
+                      <a target="_blank" href="https://builde7b0b.github.io/GA-Portfolio/" class="btn-hey">Front-End Portfolio - HTML CSS JS</a>
+                    </li>
+                    
+                    <!-- <li>
+                      <a target="_blank" href="https://kw-desktop.netlify.app/" class="btn-hey">Youtuber SPA Web App - Angular | Typescript | Javascript</a>
+                    </li> -->
+                    
+                    
+                    
+                    
+                  </ul>
+                  <div class="portfolio-link">
+                    <a target="_blank" href="https://builde7b0b.github.io/Ecbjr-Portfolio/" class="btn-portfolio">Full Portfolio</a>
+                  </div>
+                </section>
     
-                <p>
-                    <h3></h3>
-                    <section>
+                    <section data-aos="fade-up">
+                      
                         <h3>Code Repo's</h3>
                         <ul class="project-list">
                           <li>
@@ -116,39 +178,7 @@
                           <a target="_blank" href="https://builde7b0b.github.io/Ecbjr-Portfolio/" class="btn-portfolio">Full Portfolio</a>
                         </div>
                       </section>
-                      <section>
-                        <h3>Live Apps</h3>
-                        <ul class="project-list">
-                          <li>
-                            <a target="_blank" href="https://buzzburgers.netlify.app/" class="btn-hey">Buzz Burgers</a>
-                          </li>
-                          <li>
-                            <a target="_blank" href="https://ecbjrthreejs.netlify.app/" class="btn-hey">Three.JS Portfolio</a>
-                          </li>
-                          <li>
-                            <a target="_blank" href="https://gbudy.vercel.app/" class="btn-hey">OpenAI ChatBot in ReactJS</a>
-                          </li>
-                          
-                          <li>
-                            <a target="_blank" href="https://builde7b0b.github.io/GA-Portfolio/" class="btn-hey">Front-End Portfolio - HTML CSS JS</a>
-                          </li>
-                          
-                          <li>
-                            <a target="_blank" href="https://kw-desktop.netlify.app/" class="btn-hey">Youtuber SPA Web App - Angular | Typescript | Javascript</a>
-                          </li>
-                          
-                          <li>
-                            <a target="_blank" href="https://cronosclassroom.art/" class="btn-hey">Educational Blockchain Website - HTML | CSS | JS</a>
-                          </li>
-                          
-                          
-                        </ul>
-                        <div class="portfolio-link">
-                          <a target="_blank" href="https://builde7b0b.github.io/Ecbjr-Portfolio/" class="btn-portfolio">Full Portfolio</a>
-                        </div>
-                      </section>
-                </p>
-
+                      
                 <h2>👩🏽‍🚀 Bootcamps</h2>
     
                 
@@ -217,30 +247,35 @@
                 <h2>🏆 Accomplishments</h2>
     
                 <p>
-    
-                    <h3>Web Development</h3>
-                    
-    
-                    <ul>
-    
-                        <li><b>Code Examples Debugged:</b> <i>100+</i></li>
-                        <li><b>Websites Developed:</b><i> 100+</i></li>
-                        <li><b>Projects Managed:</b><i> 10+</i></li>
-                        <li><b>Github Contributions</b><i> 100+</i></li>
-                        <li><b>Development Experience (in years):</b><i> 10</i></li>
-    
-    
-                    </ul>
+
+                  <ul class="progress-list">
+                      <li><b>Code Snippets Debugged:</b> <i>100+</i>
+                          <div class="progress-bar" data-value="100"></div>
+                      </li>
+                      <li><b>Websites Developed:</b> <i>100+</i>
+                          <div class="progress-bar" data-value="100"></div>
+                      </li>
+                      <li><b>Projects Managed:</b> <i>10+</i>
+                          <div class="progress-bar" data-value="10"></div>
+                      </li>
+                      <li><b>Github Contributions:</b> <i>100+</i>
+                          <div class="progress-bar" data-value="100"></div>
+                      </li>
+                      <li><b>Development Experience (in years):</b> <i>10+</i>
+                          <div class="progress-bar" data-value="100"></div>
+                      </li>
+                  </ul>
+                  
                 </p>
     
     
-                <section>
+                <section data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
                     <h2>🏆 Hackathons - 2022</h2>
                     <p>
                       <ul class="hackathon-list">
                         <li>
                           <div class="hackathon-icon" data-title="2022 Hackathon for Cronos Ecosystem on the Blockchain">
-                            <img src="https://moralis.io/wp-content/uploads/2022/06/Skarmavbild-2022-06-22-kl.-15.35.29.png" alt="Moralix x Cronos Hackathon">
+                            <img data-aos="flip-left" src="https://moralis.io/wp-content/uploads/2022/06/Skarmavbild-2022-06-22-kl.-15.35.29.png" alt="Moralix x Cronos Hackathon">
                           </div>
                         </li>
                         <li>
@@ -250,7 +285,7 @@
                         </li>
                         <li>
                           <div class="hackathon-icon" data-title="30">
-                            <img src="https://moralis.io/wp-content/uploads/2022/09/DeFi-Defined-Hackathon-Moralis-Google.png" alt="Google x Moralis 2022 Hackathon">
+                            <img  src="https://moralis.io/wp-content/uploads/2022/09/DeFi-Defined-Hackathon-Moralis-Google.png" alt="Google x Moralis 2022 Hackathon">
                           </div>
                         </li>
                       </ul>
@@ -259,36 +294,42 @@
     
             </section>
     
-            <blockquote>
+            <blockquote data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
                 <p>The best way out is always through <br>-Robert Frost</p>
             </blockquote>
     
             <section class="left">
     
-                <h2>🌮 Technical History</h2>
+                <h2 data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">🌮 Technical History</h2>
     
                 <h3><img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/2/original/CMYK-Red_Small_GeneralAssembly-Cog__1_.png" width="25px" height="25px" alt="">Interapt </h3>
-                <b>Role: </b>Full Stack SE Engineer - Remote<br /><br />
+                <b></b>Contract Software Engineer | CVS Health, EPA Enterprise Product Acceleration Team | Remote (July 2023-Present)<br /><br />
                 <p>
                     <b>Day-To-Day:</b>
                     <ul>
     
-                        <li>Meeting with clients and management to discuss needs
+                        <li>Serving as a pivotal member of the EPA, focusing on developing and enhancing full-stack internal applications using Java, Spring/Springboot & Angular as well as a variety of other tools such as Oracle and MySQL.
                             </li>
     
-                        <li>Writing Code using HTML/CSS/JS, Java and AngularJS
+                        <li>Assist and execute a company-wide migration project, transitioning applications from Pivotal Cloud Foundery(PCF) to Microsoft Azure, aligning with modern cloud strategies and scalability needs.
                             </li>
     
-                        <li>Testing applications and interfaces
+                        <li>Collaborate with cross-functional teams to ensure seamless and efficient migration of applications, databases, and services.
                         </li>
     
-                        <li>Working with Senior and Junior Team Members to determine website architecture (Developers)
+                        <li>Implement best practices for cloud architecture and deployment, leveraging my expertise in Microsoft Azure, as validated by my recent AZ-900 certification.
                         </li>
     
-                        <li>Pair Programming
+                        <li>Impact: Generative AI - Implemented a Front-end interfact to aggregate data from multlpe sources into one location which would utilize openAi on the backend to generate portions of the data that would be incomplete or need expansion.
                         </li>
     
-                        <li>AGILE Methodology
+                        <li>Impact: Internal Management Tool: Elevated application usability and user experience through targeted enhancements and feature upgrades such as updates to AG Grid filtering mechanisms and adding CRUD methods to better interact with data.
+                        </li>
+
+                        <li>Impact: Internal Management Tool: Engineered a solution to automate the extractio and processing of large Excel datasets, using custom functionality for standardization and automating data retrieval from a SharePoitn API.
+                        </li>
+
+                        <li>Impact: Automation(VM): Spearheaded the automation of the intake, provisioning, and deployment of Linux and Windows server VMs, utilizing a sophisticated tech stack including Terraform, Ansible, VMWare ARIA, and Jenkins. This project improved operational efficiency and scalability, streamlined workflows, and ensured adherence to high security and configuration standards.
                         </li>
                     </ul>
                     <br />
@@ -302,7 +343,7 @@
                         <li>Front-End Stack: HTML/CSS/JS
                         </li>
     
-                        <li>Languages: Java
+                        <li>Languages: Java, Typescript, Bash
                         </li>
     
                         <li> Web Application Frameworks: Spring
@@ -310,7 +351,7 @@
     
                         <li>Front-End Frameworks: Angular
                         </li>
-                        <li>Database: PostGres SQL / pgAdmin
+                        <li>Database: PostGres SQL / pgAdmin / Oracle
     
                         </li>
                     </ol>
@@ -363,22 +404,13 @@
                       </ol>
                     </p>
                     
-                    <!-- <h4>Projects:</h4>
-                    <ul class="project-list2">
-                      <li>
-                        <a href="" class="btn-html">Web Application</a>
-                      </li>
-                      <li>
-                        <a href="" class="btn-css">Side Project</a>
-                      </li>
-                      
-                    </ul> -->
+                   
                   </section>
                 <br />
     
                 
-                <h3>TGSOC LLC</h3>
-                <b>Role: </b>Web3 Advisor & Front-End Developer<br /><br />
+                <h3> TGSOC</h3>
+                <b>Role: </b>Web3 Blockchain & Front-End UI Engineer<br /><br />
                 <p>"Contract front-end developer specializing in blockchain technology. Developed websites and applications that demonstrated proficiency in project and ecosystem structures on the blockchain."</p>
                 <b>Bonus Skills</b>
                 <ol>
@@ -404,10 +436,12 @@
                 <b>Tech Stack:</b>
                 <ol>
                     <li>Front-End UI: JavaScript, HTML, CSS</li>
-                    <li>Front-End Frameworks: ReactJS, NextJS</li>
-                    <li>Front-End Styling: Tailwind
+                    <li>Front-End Frameworks: ReactJS, NextJS, Vue</li>
+                    <li>Front-End Styling: Tailwind, MaterialUI
                     </li>
-                    <li>Languages: Node
+                    <li>Back-End: NodeJS
+                    </li>
+                    <li>Database Solutions: FEVM(Filecoin), Pinata, NFTStorage
                     </li>
                     
                 </ol>
@@ -415,16 +449,16 @@
                 <h4>Projects:</h4>
                     <ul class="project-list2">
                       <li>
-                        <a target="_blank" href="https://gbudy.vercel.app/" class="btn-html">OpenAI API,Chatbot</a>
+                        <a target="_blank" href="https://gbudy.vercel.app/" class="btn-html">OpenAI API,Chatbot Hosted with vercel</a>
                       </li>
                       <li>
-                        <a target="_blank" href="https://buzzburgers.netlify.app/" class="btn-css"> Decentralized NFT app</a>
+                        <a target="_blank" href="https://buzzburgers.netlify.app/" class="btn-css"> Decentralized Application (NFT)</a>
                       </li>
                       <li>
                         <a target="_blank" href="https://cronosclassroom.art/" class="btn-javascript">Blockchain Education</a>
                       </li>
                       <li>
-                        <a target="_blank" href="https://tgsoc.net/" class="btn-react">Front-End Landing Page</a>
+                        <a target="_blank" href="https://tgsoc.com/" class="btn-react">Company Landing</a>
                       </li>
                     </ul>
                 
@@ -451,54 +485,54 @@
     
     
             <!-- 3D Slideshow Section -->
-    <section id="slideshow">
+    <section data-aos="fade-up" id="slideshow">
     
         
         <div class="entire-content">
          <div class="content-carrousel">
           <figure class="shadow">
-           <img
-            src="/images/3D.png"
+           <img data-aos="flip-left" 
+            src="/images/mockups/tokinaudio.png"
+           />
+          </figure>
+          <figure class="shadow">
+           <img class="hover-gallery"
+            src="/images/mockups/mock1.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/Dev.png"
+            src="/images/mockups/mock2.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/DevTest.png"
+            src="/images/mockups/mock3.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/DevTest3.png"
+            src="/images/mockups/mock4.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/DevTest4.png"
+            src="/images/mockups/mock5.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/DevBuild7.png"
+            src="images/mockups/mock6.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/DevBuild55.png"
+            src="/images/mockups/mock7.png"
            />
           </figure>
           <figure class="shadow">
            <img
-            src="/images/MetaverseBuild.png"
-           />
-          </figure>
-          <figure class="shadow">
-           <img
-            src="/images/MetaverseBuild1.png"
+            src="/images/mockups/mock8.png"
            />
           </figure>
          </div>
@@ -506,30 +540,39 @@
        </section>
     
        
-            <blockquote>
+            <blockquote data-aos="zoom-in">
                 <p>Thanks for visiting!</p>
             </blockquote>
     
     
         </main>
-    
+        <script>
+          function generateRandomHash(length) {
+  const characters = '0123456789ABCDEF';
+  let hash = '';
+  for (let i = 0; i < length; i++) {
+      hash += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return hash;
+}
+
+function showRandomHash() {
+  const randomHash = generateRandomHash(16); // Generates a 16-character hash
+  document.getElementById('random-hash-display').innerText = randomHash;
+}
+
+        </script>
         <script type="module" src="/main.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            // Global settings
+            easing: 'ease-in-out', // Default easing
+            duration: 800, // Animation duration
+            once: true, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+          });
+        </script>
+
     </body>
     </html>
